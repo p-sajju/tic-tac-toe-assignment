@@ -1,0 +1,286 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+    background : #e0e5ec;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+h1 {
+    position  : relative;
+    text-align: center;
+    color     : #353535;
+    font-size : 50px;
+}
+
+.custom-btn {
+    width          : 130px;
+    height         : 40px;
+    color          : #fff;
+    border-radius  : 5px;
+    padding        : 10px 25px;
+    font-family    : 'Lato', sans-serif;
+    font-weight    : 500;
+    background     : transparent;
+    cursor         : pointer;
+    padding-bottom : 30px;
+    text-decoration: none;
+    transition     : all 0.3s ease;
+    position       : relative;
+    display        : inline-block;
+    box-shadow     : inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+}
+
+/* 5 */
+.btn-5 {
+    width      : 200px;
+    height     : 40px;
+    line-height: 42px;
+    padding    : 0;
+    border     : none;
+    background : rgb(21, 201, 15);
+
+    background: linear-gradient(0deg, rgb(38, 182, 25) 0%, rgb(51, 167, 28) 100%);
+}
+
+.btn-5:hover {
+    color          : #1e8d08;
+    background     : transparent;
+    box-shadow     : none;
+    text-decoration: none;
+}
+
+.btn-5:before,
+.btn-5:after {
+    content   : '';
+    position  : absolute;
+    top       : 0;
+    right     : 0;
+    height    : 2px;
+    width     : 0;
+    background: #1e8d08;
+    box-shadow:
+        -1px -1px 5px 0px #fff,
+        7px 7px 20px 0px #0003,
+        4px 4px 5px 0px #0002;
+    transition: 400ms ease all;
+}
+
+.btn-5:after {
+    right : inherit;
+    top   : inherit;
+    left  : 0;
+    bottom: 0;
+}
+
+.btn-5:hover:before,
+.btn-5:hover:after {
+    width     : 100%;
+    transition: 800ms ease all;
+}
+
+/* 4 */
+.btn-4 {
+    background-color: #4dccc6;
+    background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+    line-height     : 42px;
+    padding         : 0;
+    border          : none;
+}
+
+.btn-4:hover {
+    text-decoration : none;
+    background-color: #89d8d3;
+    background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+}
+
+.btn-4 span {
+    position: relative;
+    display : block;
+    width   : 100%;
+    height  : 100%;
+}
+
+.btn-4:before,
+.btn-4:after {
+    position: absolute;
+    content : "";
+    right   : 0;
+    top     : 0;
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .9),
+        -4px -4px 6px 0 rgba(116, 125, 136, .2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .9),
+        inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+    transition: all 0.3s ease;
+}
+
+.btn-4:before {
+    height: 0%;
+    width : .1px;
+}
+
+.btn-4:after {
+    width : 0%;
+    height: .1px;
+}
+
+.btn-4:hover:before {
+    height: 100%;
+}
+
+.btn-4:hover:after {
+    width: 100%;
+}
+
+.btn-4 span:before,
+.btn-4 span:after {
+    position: absolute;
+    content : "";
+    left    : 0;
+    bottom  : 0;
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .9),
+        -4px -4px 6px 0 rgba(116, 125, 136, .2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .9),
+        inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+    transition: all 0.3s ease;
+}
+
+.btn-4 span:before {
+    width : .1px;
+    height: 0%;
+}
+
+.btn-4 span:after {
+    width : 0%;
+    height: .1px;
+}
+
+.btn-4 span:hover:before {
+    height: 100%;
+}
+
+.btn-4 span:hover:after {
+    width: 100%;
+}
+
+td {
+	border        : 2px solid #333;
+	height        : 100px;
+	width         : 100px;
+	text-align    : center;
+	vertical-align: middle;
+	font-size     : 70px;
+	cursor        : pointer;
+	box-shadow    : 0 2px 10px rgba(0, 0, 0, .3);
+}
+
+table tr:first-child td {
+	border-top: 5px solid #333;
+}
+
+table tr:last-child td {
+	border-bottom: 5px solid #333;
+}
+
+table tr td:first-child {
+	border-left: 5px solid #333;
+}
+
+table tr td:last-child {
+	border-right: 5px solid #333;
+}
+
+table {
+	border-collapse: collapse;
+	position       : absolute;
+	left           : 50%;
+	margin-left    : -155px;
+	top            : 250px;
+}
+
+.endgame {
+	display         : none;
+	width           : 200px;
+	top             : 320px;
+	background-color: rgba(37, 167, 54, 0.8);
+	position        : absolute;
+	left            : 50%;
+	margin-left     : -100px;
+	padding-top     : 50px;
+	padding-bottom  : 50px;
+	text-align      : center;
+	border-radius   : 5px;
+	color           : white;
+	font-size       : 2em;
+}
+
+.btn-2 {
+    background: rgb(96, 9, 240);
+    color        : #fff;
+	background: linear-gradient(0deg, rgba(96, 9, 240, 1) 0%, rgba(129, 5, 240, 1) 100%);
+    border    : none;
+    box-shadow   : inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+		7px 7px 20px 0px rgba(0, 0, 0, .1),
+		4px 4px 5px 0px rgba(0, 0, 0, .1);
+
+}
+
+.btn-2:before {
+	height: 0%;
+	width : 2px;
+}
+
+.btn-2:hover {
+	box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .5),
+		-4px -4px 6px 0 rgba(116, 125, 136, .5),
+		inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+		inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+@media (min-width: 1080px) {
+	.replay {
+		left           : 45%;
+		position       : relative;
+		display        : inline-block;
+		padding        : 1.2em 2em;
+		text-decoration: none;
+		text-align     : center;
+		cursor         : pointer;
+		user-select    : none;
+		color          : white;
+	}
+
+	.replay::before {
+		content      : '';
+		position     : absolute;
+		top          : 0;
+		left         : 0%;
+		bottom       : 0;
+		right        : 0;
+		background   : linear-gradient(135deg, #6e8efb, #a777e3);
+		border-radius: 4px;
+		transition   : box-shadow .5s ease, transform .2s ease;
+		will-change  : transform;
+		box-shadow   : 0 2px 5px rgba(0, 0, 0, .2);
+		transform    :
+			translateY(var(--ty, 0)) rotateX(var(--rx, 0)) rotateY(var(--ry, 0)) translateZ(var(--tz, -12px));
+	}
+
+	.replay:hover::before {
+		box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+	}
+
+	.replay::after {
+		position      : relative;
+		display       : inline-block;
+		content       : attr(data-title);
+		transition    : transform .2s ease;
+		font-weight   : bold;
+		letter-spacing: .01em;
+		will-change   : transform;
+		transform     :
+			translateY(var(--ty, 0)) rotateX(var(--rx, 0)) rotateY(var(--ry, 0));
+	}
+}
