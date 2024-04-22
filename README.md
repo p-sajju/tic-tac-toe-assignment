@@ -15,8 +15,8 @@ We are going to build the web application using:
 ### 3.1. Clone Repo
 
 ```
-$ git clone project_url
-$ cd project
+$ git clone https://github.com/p-sajju/tic-tac-toe-assignment.git
+$ cd tic-tac-toe-assignment
 ```
 
 ### 3.2. Bundle Install 
